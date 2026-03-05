@@ -1,0 +1,9 @@
+Django
+djangorestframework
+django-cors-headers
+whitenoise
+gunicorn
+inflection
+PyYAML
+uritemplate
+psycopg2-binary
