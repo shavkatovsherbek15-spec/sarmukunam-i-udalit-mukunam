@@ -7,7 +7,7 @@ from django.views.generic.base import TemplateView
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewset)
-router.register(r'alboms', views.AlbumViewset)
+router.register(r'alboms', views.AlbumViewset, basename='albums')
 
 
 urlpatterns =[
