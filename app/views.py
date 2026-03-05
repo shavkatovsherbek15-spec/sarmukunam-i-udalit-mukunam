@@ -18,7 +18,7 @@ class clock(UserRateThrottle):
     rate = '5/min'
 
 @api_view(['GET', 'POST'])
-@throttle_classes[(clock)]
+@throttle_classes([clock])
 def hello(request):
     if request.method == 'POST':
         print(request.data)
@@ -28,7 +28,7 @@ def hello(request):
 
 class Apiview(APIView):
     serializer_class = ArtistSerializer
-    throttle_classes = [(clock)]
+    throttle_classes = ([clock])
 
     def get(self, request):
         artist = Artist.obejcts.all()
