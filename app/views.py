@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets, permissions, mixins
-from serializers import UserSerializer, ArtistSerializer, AlbumSerializer
+from .serializers import UserSerializer, ArtistSerializer, AlbumSerializer
 from rest_framework.decorators import api_view, throttle_classes
 from rest_framework.response import Response
 from rest_framework.views import APIView
